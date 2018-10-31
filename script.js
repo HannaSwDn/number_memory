@@ -11,12 +11,19 @@ let p_level = document.querySelector('#p_level');
 let p_userguess = document.querySelector('#p_userguess');
 
 // global variables
-let numbersAmount = 1;
+let numbersAmount = 5;
 let generatedNumbers = [];
+let userGuess = [];
 
 const startTest = () => {
-    for (let i = 0; i < generatedNumbers; i++) {
+    // generating random numbers for the user to memorize and guess
+    for (let i = 0; i < numbersAmount; i++) {
         let number = Math.floor(Math.random() * 10);
         generatedNumbers.push(number);
     }
+    generatedNumbers = generatedNumbers.join('');
+}
+
+const guess = () => {
+    userGuess = input.value;
 }
