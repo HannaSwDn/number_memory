@@ -3,6 +3,15 @@
     font-family: Montserrat;
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+
+*:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 .box {
@@ -11,8 +20,39 @@
     width: 100vw;
 }
 
+/* #first div */
+
 #first button {
     border: 3px solid black;
+    font-size: 25px;
+    font-weight: bold;
     height: 75px;
+    letter-spacing: 5px;
+    margin-top: 40vh;
+    text-transform: uppercase;
+    transition: all .5s;
     width: 300px;
 }
+
+#first button:hover {
+    background-color: #fcfffc;
+    border: 3px solid green;
+    color: green;
+    letter-spacing: 15px;
+}
+
+#first p {
+    cursor: pointer;
+    letter-spacing: 3px;
+    line-height: 10vh;
+    transition: all .5s;
+    word-spacing: 3px;
+}
+
+#first p:hover {
+    letter-spacing: 5px;
+}
+
+/* #howtoplay div */
+
+#howto 
