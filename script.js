@@ -26,4 +26,14 @@ const startTest = () => {
 
 const guess = () => {
     userGuess = input.value;
+    if (userGuess == generatedNumbers) {
+        console.log('they are the same');
+    } else {
+        console.log('they are not the same');
+        // game over
+    }
+    
+    // resetting for next level
+    generatedNumbers = [];
+    userGuess = [];
 }
